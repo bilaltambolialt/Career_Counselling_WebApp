@@ -1,12 +1,12 @@
-# ICGC — Indian Career Guidance Council
+# Career Counselling Web App
 
 ### Career counselling and college-admission guidance for Indian students
 
-ICGC brings students, counsellors, and education consultants together in one platform. Students can explore colleges, compare their exam performance with historical cutoffs, organize college preferences, and get guidance from a counsellor. Consultants manage their own students and counsellors, while platform administrators oversee tenants and shared college data.
+This platform brings students, counsellors, and education consultants together. Students can explore colleges, compare their exam performance with historical cutoffs, organize college preferences, and get guidance from a counsellor. Consultants manage their own students and counsellors, while platform administrators oversee tenants and shared college data.
 
 Recommendations are based on the student's profile and available cutoff data. They are intended to support counselling—not guarantee admission.
 
-## What makes ICGC distinctive
+## Key features
 
 - **Cutoff-based recommendations:** Compares a student's exam percentile or rank with recent historical cutoffs for the relevant exam stream, category, college, and branch. Results include Dream, Safe, and Backup groupings, risk labels, probability ranges, and cutoff-trend context.
 - **Student-owned college shortlist:** Students can organize preferred colleges into Dream, Target, and Safe categories.
@@ -110,17 +110,6 @@ database/     PostgreSQL migrations, seed scripts, and RLS policies
 docs/         API, schema, setup, QA, and architecture documentation
 frontend/     React application and role-specific workspaces
 ```
-
-## Documentation
-
-- [Database setup guide](docs/DATABASE_SETUP_GUIDE.md)
-- [Database schema](docs/DATABASE_SCHEMA.md)
-- [API documentation](docs/API_DOCUMENTATION.md)
-- [Tenant architecture](docs/TENANT_ARCHITECTURE.md)
-- [QA test results](docs/QA_TEST_RESULTS.md)
-- [Project log](docs/PROJECT_LOG.md)
-- [SQL migrations](database/migrations/)
-- [RLS policies](database/rls_policies.sql)
 
 ## License
 
