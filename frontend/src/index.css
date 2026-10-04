@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base Reset ─────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #ffffff;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ─── Custom Scrollbar ───────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #0e7490; }
+
+/* ─── Gradient Text ──────────────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(130deg, #0e7490 0%, #0369a1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-warm {
+  background: linear-gradient(130deg, #b45309 0%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Buttons ────────────────────────────────────────────── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #0e7490 0%, #0369a1 100%);
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.8rem 1.75rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  letter-spacing: 0.01em;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(14, 116, 144, 0.30);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: #0f172a;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.8rem 1.75rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1.5px solid #cbd5e1;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  letter-spacing: 0.01em;
+}
+
+.btn-outline:hover {
+  border-color: #0e7490;
+  color: #0e7490;
+  background: rgba(14, 116, 144, 0.05);
+  transform: translateY(-2px);
+}
+
+/* ─── Section Label ──────────────────────────────────────── */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #0e7490;
+}
+
+.section-label::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #0e7490;
+  border-radius: 2px;
+}
+
+/* ─── Card Hover ─────────────────────────────────────────── */
+.card-glow {
+  transition: box-shadow 0.35s ease, border-color 0.35s ease, transform 0.25s ease;
+}
+
+.card-glow:hover {
+  box-shadow: 0 6px 32px rgba(14, 116, 144, 0.10);
+  transform: translateY(-2px);
+}
+
+/* ─── Form Inputs ────────────────────────────────────────── */
+.form-input {
+  width: 100%;
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  color: #0f172a;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input:focus {
+  border-color: #0e7490;
+  box-shadow: 0 0 0 3px rgba(14, 116, 144, 0.08);
+}
+
+.form-input::placeholder {
+  color: #94a3b8;
+}
+
+.form-input option {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.78rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 0.45rem;
+  letter-spacing: 0.02em;
+}
+
+/* ─── Section Divider ────────────────────────────────────── */
+.section-divider {
+  border: none;
+  height: 1px;
+  background: #f1f5f9;
+  margin: 0;
+}

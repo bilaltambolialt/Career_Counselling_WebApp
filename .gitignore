@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment files — keep templates, never commit actual values
+**/.env*
+!**/.env.example
+
+# Firebase and other service-account credentials
+*firebase-adminsdk*.json
+*firebase*key*.json
+*firebase*credentials*.json
+*service-account*.json
+*serviceAccount*.json
+
+# Private keys and certificate stores
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local Claude Code settings
+.claude/
+
+# Testing
+coverage/
+
+# Misc
+*.local

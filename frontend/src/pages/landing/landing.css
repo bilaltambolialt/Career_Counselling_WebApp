@@ -1,0 +1,164 @@
+/* ─── Landing Page Styles ────────────────────────────────── */
+/* Scoped under .landing-page to avoid conflicts with app styles */
+
+/* ─── Custom Theme Variables ─────────────────────────────── */
+.landing-page {
+  --font-display: "DM Sans", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+/* ─── Base Overrides for Landing ─────────────────────────── */
+.landing-page {
+  font-family: var(--font-body);
+  background-color: #feeed5;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Gradient Text ──────────────────────────────────────── */
+.landing-page .gradient-text {
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: #f99902;
+  color: #f99902;
+}
+
+.landing-page .gradient-text-warm {
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: #d97706;
+  color: #d97706;
+}
+
+/* ─── Landing-specific Buttons ───────────────────────────── */
+.landing-page .lp-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f99902;
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.8rem 1.75rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  letter-spacing: 0.01em;
+}
+
+.landing-page .lp-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(249, 153, 2, 0.35);
+}
+
+.landing-page .lp-btn-primary:active {
+  transform: translateY(0);
+}
+
+.landing-page .lp-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: #0f172a;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.8rem 1.75rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1.5px solid #cbd5e1;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  letter-spacing: 0.01em;
+}
+
+.landing-page .lp-btn-outline:hover {
+  border-color: #f99902;
+  color: #f99902;
+  background: rgba(249, 153, 2, 0.05);
+  transform: translateY(-2px);
+}
+
+/* ─── Section Label ──────────────────────────────────────── */
+.landing-page .section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #f99902;
+}
+
+.landing-page .section-label::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #f99902;
+  border-radius: 2px;
+}
+
+/* ─── Card Hover ─────────────────────────────────────────── */
+.landing-page .card-glow {
+  transition: box-shadow 0.35s ease, border-color 0.35s ease, transform 0.25s ease;
+}
+
+.landing-page .card-glow:hover {
+  box-shadow: 0 6px 32px rgba(249, 153, 2, 0.12);
+  transform: translateY(-2px);
+}
+
+/* ─── Form Inputs ────────────────────────────────────────── */
+.landing-page .lp-form-input {
+  width: 100%;
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  color: #0f172a;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.landing-page .lp-form-input:focus {
+  border-color: #f99902;
+  box-shadow: 0 0 0 3px rgba(249, 153, 2, 0.10);
+}
+
+.landing-page .lp-form-input::placeholder {
+  color: #94a3b8;
+}
+
+.landing-page .lp-form-input option {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.landing-page .lp-form-label {
+  display: block;
+  font-size: 0.78rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 0.45rem;
+  letter-spacing: 0.02em;
+}
+
+/* ─── Section Divider ────────────────────────────────────── */
+.landing-page .section-divider {
+  border: none;
+  height: 1px;
+  background: #f1f5f9;
+  margin: 0;
+}
